@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+.main {
+    max-width: 1024px;
+    margin-inline: 1.5rem;
+    background-color: #fff;
+
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+.page_title {
+    padding: 2rem;
+}
+
+.pokemon_cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    transition: all .3s;
+   
+}
+
+.pokemon_details {
+    position: absolute;
+    max-width: 1024px;
+    width: 100%;
+    z-index: 999;
+    top: -100rem;
+    background-color: #fff;
+    transition: all .3s;
+}
+
+.pokemon_buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.controller_button{
+    
+    padding: 10px;
+    margin: 1rem 2rem;
+
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+
+
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.hidde_controller-button{
+    display: none;
+}
+
+
+
+/* Breakponts */
+
+@media screen and (min-width:576px) {
+
+    .pokemon_cards {
+
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+    }
+
+
+}
+
+@media screen and (min-width:992px) {
+
+    .pokemon_cards {
+
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+
+    }
+
+}
+
+@media screen and (min-width:1200px) {
+
+    .pokemon_cards {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+
+    }
+
+
+}

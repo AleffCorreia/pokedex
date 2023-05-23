@@ -1,0 +1,153 @@
+.pokemon_detail {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    transition: all .3s;
+
+}
+
+.pokemon_name {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.pokemon_id {
+    font-size: .725rem;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.pokemon_types {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.pokemon_type {
+    font-size: .725rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: .25rem .5rem;
+    border-radius: 2rem;
+    filter: brightness(1.1);
+}
+
+.pokemon_image {
+    max-width: max-content;
+    width: 180px;
+    align-self: center;
+    position: relative;
+    top: 2rem;
+}
+
+.detail_button {
+
+    padding: 10px;
+    margin: 1rem 2rem;
+
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+
+
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.pokemon_info {
+    background-color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pokemon_info-subtitle {
+    padding-bottom: .35rem;
+}
+
+.pokemon_about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    font-size: .875rem;
+    color: #999;
+    text-transform: capitalize;
+
+}
+
+
+
+
+.skill_bar {
+    background-color: #49d0b0;
+    height: 5px;
+    border-radius: 0.25rem;
+    filter: brightness(2);
+}
+
+.skill_percentage {
+    display: block;
+    filter: brightness(0.5);
+    height: 5px;
+}
+
+.skill_low {
+    background-color: #fc6c6d !important;
+}
+
+.skill_value {
+    width: 64%;
+}
+
+
+@media screen and (min-width:576px) {
+
+
+    .pokemon_info-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:992px) {
+
+
+    .pokemon_info-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+  
+
+    .pokemon_info_container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+
+}
